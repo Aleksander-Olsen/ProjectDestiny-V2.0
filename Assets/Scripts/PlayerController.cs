@@ -41,4 +41,8 @@ public class PlayerController : MonoBehaviour
             DatabaseController.instance.RuntimeData.SaveDatabase();
         }
     }
+
+    public static int GetRandomSide() {
+        return random.Next(2) * 2 - 1;
+    }
 }
